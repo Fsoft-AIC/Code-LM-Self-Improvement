@@ -4,7 +4,7 @@ The official repository for paper: [Better Language Models of Code Through Self 
 Findings of The 61st Annual Meeting of the Association for Computaional Linguistics (ACL 2023)
 
 ## Overview
-In this paper, we propose a simple augmentation technique to improve performance of code language models on sequence generation tasks. In particular, after fine-tuning a pre-trained model on a specific sequence generation task, we
+In this paper, we propose a simple augmentation technique to improve performance of code language models on sequence generation tasks. In particular, after fine-tuning a pre-trained language model on a specific sequence generation task, we
 - Use this fine-tuned model to create an augmented version of training data and then
 - Continue to fine-tune this model on the augmented dataset.
 
