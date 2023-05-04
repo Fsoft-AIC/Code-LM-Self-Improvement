@@ -10,8 +10,8 @@ In this paper, we propose a simple augmentation technique to improve performance
 
 The overall training pipeline as well as process of data augmentation are depicted by the below figures.
 
-![Overall training pipeline](./assets/pipeline.pdf)
-![Demonstrating the process of generating augmented datasets in our work](./assets/augmentation.pdf)
+![Overall training pipeline](./assets/pipeline.png)
+![Demonstrating the process of generating augmented datasets in our work](./assets/augmentation.png)
 
 ## Results
 Please refer to our [paper](https://arxiv.org/pdf/2304.01228.pdf) for detailed results. In summary, our experiments showed that this method, when applied to popular pre-trained code models (CodeBERT, CodeT5, and UniXCoder), significantly improves performance on code summarization and code generation tasks.
