@@ -4,17 +4,21 @@ The official repository for paper: [Better Language Models of Code Through Self 
 Findings of The 61st Annual Meeting of the Association for Computaional Linguistics (ACL 2023)
 
 ## Overview
-In this paper, we propose a simple augmentation technique on input sequences from the training set to improve performance on sequence generation of code language models. In particular, after fine-tuning a pre-trained model on a specific sequence generation task, we
+In this paper, we propose a simple augmentation technique to improve performance of code language models on sequence generation tasks. In particular, after fine-tuning a pre-trained model on a specific sequence generation task, we
 - Use this fine-tuned model to create an augmented version of training data and then
 - Continue to fine-tune this model on the augmented dataset.
+
 The overall training pipeline as well as process of data augmentation are depicted by the below figures.
-![Overall training pipeline](assets/pipeline.pdf)
-![Demonstrating the process of generating augmented datasets in our work](assets/augmentation.pdf)
+
+![Overall training pipeline](./assets/pipeline.pdf)
+![Demonstrating the process of generating augmented datasets in our work](./assets/augmentation.pdf)
+
 ## Results
 Please refer to our [paper](https://arxiv.org/pdf/2304.01228.pdf) for detailed results. In summary, our experiments showed that this method, when applied to popular pre-trained code models (CodeBERT, CodeT5, and UniXCoder), significantly improves performance on code summarization and code generation tasks.
 ## Installation
 ```bash
 conda create -n code-self-improve -y
+conda activate code-self-improve
 conda install pip -y
 pip install -r requirements.txt
 ```
@@ -70,10 +74,11 @@ python run.py \
 Final checkpoint will be saved as `./output_dir/python/checkpoint-best-bleu/pytorch_model.bin`
 
 ## Acknowledgement
-Our code inherits from the following repositories:
+Our code inherits the following repositories:
 - [CodeBERT](https://github.com/microsoft/CodeBERT)
 - [UniXCoder](https://github.com/microsoft/CodeBERT/tree/master/UniXcoder)
 - [CodeT5](https://github.com/salesforce/CodeT5)
+
 We thank all the researchers who have made their code publicly available to facilitate the research community as well as our work.
 
 ## Citation
